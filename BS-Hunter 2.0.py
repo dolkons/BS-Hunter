@@ -58,8 +58,9 @@ else:
     mcc = raw_input("Enter a 'MCC' value: ")
     mncs = raw_input("Enter a 'MNC' values divided by spaces: ").split()
     for mnc in mncs:
-        lacs[mnc] = raw_input("Enter an 'LAC' values for a MNC = "+mnc+", divided by space: ").split()
-        cids[mnc] = raw_input("Enter a cid intervals for a MNC = "+mnc+", X-XX Y-YY format: ").split()
+        lacs[mnc] = raw_input("Enter an 'LAC' values for the MNC = " + mnc + ", divided by space: ").split()
+        cids[mnc] = raw_input("Enter a cid intervals for the MNC = " + mnc + ", X-XX Y-YY format: ").split()
+        sectors[mnc] = raw_input("Enter a number of sectors for the MNC = " + mnc)
 
 columnCount = 0
 responseCount = 1
