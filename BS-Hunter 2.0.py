@@ -75,7 +75,7 @@ for mnc in mncs:
             startCid = int(cidInterval.split("-")[0])
             endCid = int(cidInterval.split("-")[1])
             for cid in range(startCid,endCid+1, 256):
-                for i in range(1, int(sectors[mnc])):
+                for i in range(0, int(sectors[mnc])):
                     cmd = ["node", pathToJsFile, mcc, mnc, lac, str(cid + i)]
                     p = Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True)
                     p.wait()
