@@ -87,7 +87,7 @@ for mnc in mncs:
                         lat = response[1].split(" ")[3]
                         lon = response[1].split(" ")[5]
                         ws.write(strCount, columnCount, mnc, style)
-                        ws.write(strCount, columnCount+1, cid, style)
+                        ws.write(strCount, columnCount+1, cid + i, style)
                         ws.write(strCount, columnCount+2, lac, style)
                         ws.write(strCount, columnCount+3, lat, style)
                         ws.write(strCount, columnCount+4, lon, style)
